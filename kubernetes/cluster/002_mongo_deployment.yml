@@ -14,6 +14,13 @@ spec:
       labels:
         name: mongo
     spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - key: beta.kubernetes.io/os
+              operator: In
+              values:
+                - linux
       containers:
         - image: mongo:${MONGO_TAG}
           name: mongo
