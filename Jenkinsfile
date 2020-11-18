@@ -14,7 +14,6 @@ if(! CLUSTER.containsKey(TARGET_CLUSTER_DOMAIN)){
     error("Unknown cluster '${TARGET_CLUSTER_DOMAIN}'")
 }
 TARGET_CLUSTER = CLUSTER.get(TARGET_CLUSTER_DOMAIN)
-# change here
 
 if(ORCHESTRATOR.toLowerCase() == "kubernetes"){
     KUBERNETES_NAMESPACE_DEV = "${IMAGE_NAMESPACE_DEV}"
