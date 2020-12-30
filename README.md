@@ -1,6 +1,6 @@
 # pacman-nodejs
 
-Pac-Man Node.js application - test
+Pac-Man Node.js application
 
 ## Local Development
 
