@@ -11,8 +11,8 @@ services:
 
   pacman:
     build:
-      context: "./"
-      dockerfile: "./Dockerfile.development"
+      context: "../"
+      dockerfile: "Dockerfile.development"
     depends_on:
       - "mongo"
     environment:
@@ -23,5 +23,5 @@ services:
       - "8080:8080"
     volumes:
       - type: "bind"
-        source: "./src"
+        source: "../src"
         target: "/home/node/app/src"

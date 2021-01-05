@@ -182,6 +182,8 @@ tr:hover {
   max-width: 640px;
   text-align: left;
   margin: 0;
+  background-image: url("img/mirantis-logo-white-8bit2.gif");
+  background-repeat: no-repeat;
 }
 .container {
   text-align: center;
