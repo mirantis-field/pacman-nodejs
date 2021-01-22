@@ -5,6 +5,8 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
+  storageClassName: "lvp-stacklight"
+
   resources:
     requests:
       storage: 4Gi
