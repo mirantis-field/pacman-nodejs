@@ -1,13 +1,13 @@
 IMAGE_REPOSITORY = "pacman-nodejs"
 
 // For available target clusters, contact your platform administrator
-TARGET_CLUSTER_DOMAIN = "us.demo.mirantis.com"
+TARGET_CLUSTER_DOMAIN = "eu.demo.mirantis.com"
 
 // Available orchestrators = [ "kubernetes" | "swarm" ]
 ORCHESTRATOR = "kubernetes"
 
 // Available ingress = [ "ingress" | "istio_gateway" ]
-KUBERNETES_INGRESS = "istio_gateway"
+KUBERNETES_INGRESS = "ingress"
 
 if(! CLUSTER.containsKey(TARGET_CLUSTER_DOMAIN)){
     error("Unknown cluster '${TARGET_CLUSTER_DOMAIN}'")
