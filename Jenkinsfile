@@ -4,7 +4,7 @@ IMAGE_REPOSITORY = "pacman-nodejs"
 TARGET_CLUSTER_DOMAIN = "us.demo.mirantis.com"
 
 // Available orchestrators = [ "kubernetes" | "swarm" ]
-ORCHESTRATOR = "swarm"
+ORCHESTRATOR = "kubernetes"
 
 // Available ingress = [ "ingress" | "istio_gateway" ]
 KUBERNETES_INGRESS = "istio_gateway"
