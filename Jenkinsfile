@@ -7,7 +7,7 @@ TARGET_CLUSTER_DOMAIN = "us.demo.mirantis.com"
 ORCHESTRATOR = "kubernetes"
 
 // Available ingress = [ "ingress" | "istio_gateway" ]
-KUBERNETES_INGRESS = "ingress"
+KUBERNETES_INGRESS = "istio_gateway"
 
 if(! CLUSTER.containsKey(TARGET_CLUSTER_DOMAIN)){
     error("Unknown cluster '${TARGET_CLUSTER_DOMAIN}'")
