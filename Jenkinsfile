@@ -48,11 +48,11 @@ node {
         docker_image = docker.build("${IMAGE_NAMESPACE_DEV}/${IMAGE_REPOSITORY}")
     }
 
-//    stage('Unit Tests') {
- //       docker_image.inside {
-  //          sh 'echo "Tests passed"'
-   //     }
-    //}
+    stage('Unit Tests') {
+        docker_image.inside {
+            sh 'echo "Tests passed"'
+        }
+    }
 
     stage('Push') {
         docker.withRegistry(TARGET_CLUSTER['REGISTRY_URI'], TARGET_CLUSTER['REGISTRY_CREDENTIALS_ID']) {
