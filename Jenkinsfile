@@ -6,6 +6,7 @@ TARGET_CLUSTER_DOMAIN = "us.demo.mirantis.com"
 
 // Available orchestrators = [ "kubernetes" | "swarm" ]
 ORCHESTRATOR = "kubernetes"
+// Comment here for demo purposes
 
 // Available ingress = [ "ingress" | "istio_gateway" ]
 KUBERNETES_INGRESS = "istio_gateway"
