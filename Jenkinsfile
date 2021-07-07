@@ -2,6 +2,7 @@ IMAGE_REPOSITORY = "pacman-nodejs"
 
 // For available target clusters, contact your platform administrator
 TARGET_CLUSTER_DOMAIN = "us.demo.mirantis.com"
+// Demo Code
 
 // Available orchestrators = [ "kubernetes" | "swarm" ]
 ORCHESTRATOR = "kubernetes"
