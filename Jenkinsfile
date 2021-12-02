@@ -1,4 +1,5 @@
 IMAGE_REPOSITORY = "pacman-nodejs"
+// comment for demo
 
 // For available target clusters, contact your platform administrator
 TARGET_CLUSTER_DOMAIN = "us.demo.mirantis.com"
